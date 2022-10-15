@@ -1,0 +1,178 @@
+:root{--main-text-colour: #212121;
+--second-text-colour:#FFFFFF;
+--button-text-colour: #2196F3;
+--article-text-colour:#757575;
+--secondary-background-colour: #2F303A;
+--color-rgba: rgba(255, 255, 255, 0.6);
+--button-backgroud-colour: #F5F4FA;
+
+
+}
+/* ШРИФТИ Index */
+/* основні шрифти */
+
+.set{list-style: none;} 
+
+.pointing:hover, .pointing:focus{color: #2196F3;} 
+
+.current{color: var(--button-text-colour);}
+
+/* button{font-family: inherit;} */
+
+
+/* Шрифти Body */
+
+body { background-color: var(--second-text-colour); color:var(--main-text-colour);
+font-family: Roboto, sans-serif;
+letter-spacing: 0.03em;
+}
+
+
+
+/* Logo */
+
+.logo-main{ 
+    font-family: Raleway;  
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.36;
+    text-decoration: none;
+}
+
+.navigat-logo{color:var(--button-text-colour);
+   }
+
+/* Навiгацiя  */
+.navigat a{color:var(--main-text-colour);}
+
+.auth-email, .auth-tel{color:var(--main-text-colour);}
+
+.navigat .studio:hover, .navigat .studio:focus {color: var(--button-text-colour);}
+
+.navigat .studio.current{color: var(--button-text-colour);}
+
+.navigat .portfolio.current{color: var(--button-text-colour);}
+
+/* site main Index */
+.hero-title{background-color: var(--secondary-background-colour); color: var(--second-text-colour);
+}
+.hero-button{background: var(--button-text-colour); color: var(--second-text-colour); cursor: pointer;}
+.features-title{color:var(--main-text-colour);}
+.features-text{color:var(--article-text-colour);}
+
+.team-title, .about-title{color:var(--main-text-colour); 
+}
+
+.team-position{color: var(--article-text-colour);}
+.team-name{color:var(--main-text-colour);}
+
+/* footer */
+
+.web-foot{background-color: var(--secondary-background-colour);}
+.foot-logo{color: var(--button-text-colour);}
+.foot-link{color: var(--second-text-colour);}
+.foot-adress{color: var(--second-text-colour);}
+.foot-email, .foot-phone{color: var(---color-rgba);}
+
+
+.studio, .portfolio, .navigat-contact, .auth-email, .auth-tel{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+text-decoration: none;
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    /* text-align: center; надо?*/
+    letter-spacing: 0.06em;
+    /* text-transform: uppercase;   надо? */
+}
+
+.hero-button{
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+text-align: center;
+letter-spacing: 0.06em;
+}
+
+.features-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14; 
+} 
+ 
+.features-text{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+}
+
+.about-title, .team-title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+}
+
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    /* text-align: center;    */
+}
+
+.team-position{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    /* text-align: center; */
+}
+
+.foot-link{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none; 
+}
+
+.foot-list a{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7;
+font-style: normal;
+text-decoration: none; 
+}
+
+
+/* Сторiнка Портфолио шрифти */
+
+.filter-button:focus{background-color: var(--button-text-colour); color: var(--second-text-colour);}
+
+.filter-button{
+    background-color: var(--button-backgroud-colour);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    
+}
+
+    .samples-title{
+     color: var(--main-text-colour);
+     font-weight: 700;
+     font-size: 18px;
+     line-height: 2;   
+    }
+
+    .samples-text{
+      color: var(--article-text-colour);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.88;  
+    }
