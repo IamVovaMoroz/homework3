@@ -72,7 +72,7 @@ letter-spacing: 0.03em;
 .foot-logo{color: var(--button-text-colour);}
 .foot-link{color: var(--second-text-colour);}
 .foot-adress{color: var(--second-text-colour);}
-.foot-email, .foot-phone{color: var(---color-rgba);}
+.foot-email, .foot-phone{color: var(--color-rgba);}
 
 
 .studio, .portfolio, .navigat-contact, .auth-email, .auth-tel{
