@@ -285,16 +285,17 @@ text-decoration: none;
 
 .foot-list{outline: 2px solid blue; margin: 0; padding: 0; display: inline-block; padding-left: 0;}
 .li-foot-adress, .li-foot-email{margin-bottom: 9px;}
-/* .foot-adress{margin-top: 20px;} */
+
 
 
 .filter-item{margin-right: 8px; display: inline-block;  }
+
 
 .filter-item:last-child{margin-right: 0; background-color: #2196F3;} 
 
 .no-margin{margin: 0;}
 
-/* .filter-page{margin-left: auto; margin-right: auto;} */
+
 
 .filter-main{padding-bottom: 50px; padding-top: 94px; }
 
@@ -322,7 +323,8 @@ ul{margin:0; padding:0}
   }
 
   .logo-main{margin-right: 93px;}
-  /* .no-margin{margin: 0;} */
+  
 
   .li-studio, .li-portfolio, .li-email{margin-right: 50px;}
   .li-contact{margin-right: 344px;}
+
