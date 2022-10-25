@@ -4,53 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Index</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
+    <header class="site-header">
+      <div class="container">
       <nav>
         <!-- Роздiл Навигацiя сайту-->
         <ul class="navigat set">
-          <li>
+          <li class="li-logo-main">
             <a href="#" class="logo-main" lang="en"
               ><span class="navigat-logo">Web</span>Studio</a
             >
           </li>
-          <li><a href="./index.html" class="studio current">Студія</a></li>
-          <li>
+          
+          <li class="li-studio"><a href="./index.html" class="studio current">Студія</a></li>
+          <li class="li-portfolio">
             <a href="./portfolio.html" class="portfolio pointing">Портфоліо</a>
           </li>
-          <li><a href="#" class="navigat-contact pointing">Контакти</a></li>
+          <li class="li-contact"><a href="#" class="navigat-contact pointing">Контакти</a></li>
+        
         </ul>
       </nav>
-
+    
       <!-- Роздiл авторизацiя -->
       <ul class="auth set">
-        <li>
+        <li class="li-email">
           <a href="mailto:info@devstudio.com" class="auth-email pointing" lang="en"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="li-phone">
           <a href="tel:+38961111111" class="auth-tel">+38 096 111 11 11</a>
         </li>
+      
       </ul>
+    </div>
     </header>
 
     <main>
       <!-- Роздiл герой -->
+      
       <section class="hero">
+        <div class="container-hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero-button">Замовити послугу</button>
       </section>
+    </div>
 
       <!-- Роздiл Наші переваги features-->
+      
       <section class="features">
+        <div class="container">
         <!-- <h2 class="features-title">Наші переваги</h2> скрытый заголовок -->
         <h3 class="features-title">УВАГА ДО ДЕТАЛЕЙ</h3>
         <p class="features-text">
@@ -72,28 +83,34 @@
           завдань.
         </p>
       </section>
-
+    </div>
       <!-- Роздiл Чим ми займаємося about-->
+      <div class="container">
       <section class="about">
         <h2 class="about-title">Чим ми займаємося</h2>
+        <div class="about-img">
         <img
           src="./img/img1a.jpg"
           alt="Desktop-image"
           width="370"
           height="294"
-        />
-
-        <img src="./img/img2a.jpg" alt="mobil-image" width="370" height="294" />
+        /></div>
+        
+        <div class="about-img">
+        <img src="./img/img2a.jpg" alt="mobil-image" width="370" height="294" /></div>
+        <div class="about-img">
         <img
           src="./img/img3a.jpg"
           alt="tablet-image"
           width="370"
           height="294"
-        />
+        /></div>
       </section>
-
+    </div>
       <!-- Роздiл Наша команда team-->
+      
       <section class="team">
+        <div class="container">
         <h2 class="team-title">Наша команда</h2>
 
         <ul>
@@ -104,9 +121,10 @@
               width="270"
               height="260"
             />
-
+            <div class="about-employees">
             <h3 class="team-name">Ігор Дем'яненко</h3>
             <p lang="en" class="team-position">Product Designer</p>
+          </div>
           </li>
 
           <li class="team-list set">
@@ -116,9 +134,10 @@
               width="270"
               height="260"
             />
-
+            <div class="about-employees">
             <h3 class="team-name">Ольга Рєпіна</h3>
             <p lang="en" class="team-position">Frontend Developer</p>
+          </div>
           </li>
 
           <li class="team-list set">
@@ -128,9 +147,10 @@
               width="270"
               height="260"
             />
-
+            <div class="about-employees">
             <h3 class="team-name">Микола Тарасов</h3>
             <p lang="en" class="team-position">Marketing</p>
+          </div>
           </li>
 
           <li class="team-list set">
@@ -140,24 +160,28 @@
               width="270"
               height="260"
             />
-
+            <div class="about-employees">
             <h3 class="team-name">Михайло Єрмаков</h3>
             <p lang="en" class="team-position">UI Designer</p>
+          </div>
           </li>
         </ul>
       </section>
+    </div>
     </main>
     <!-- Підвал сайту -->
+   
     <footer class="web-foot">
+      <div class="container">
       <a href="#" class="foot-link" lang="en"><span class="foot-logo">Web</span>Studio</a>
       <address>
         <ul class="foot-list set">
-          <li>
+          <li class="li-foot-adress">
             <a href="https://goo.gl/maps/G1m2EjYJUnUHCnpP9" class="foot-adress"
               >м. Київ, пр-т Лесі Українки, 26</a
             >
           </li>
-          <li>
+          <li class="li-foot-email">
             <a href="mailto:info@devstudio.com" class="foot-email" lang="en"
               >info@devstudio.com</a
             >
@@ -168,5 +192,6 @@
         </ul>
       </address>
     </footer>
+  </div>
   </body>
 </html>
