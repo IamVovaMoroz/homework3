@@ -14,14 +14,14 @@ html{box-sizing: border-box;}
 
 .container {margin-left: auto;
 margin-right: auto;
-outline: 2px solid blue;
+/* outline: 2px solid blue; */
 width: 1200px;
-padding-left: 10px;
-padding-right: 10px;
+padding-left: 15px;
+padding-right: 15px;
 
 }
 .container-hero{margin-right: auto;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 
 /* ШРИФТИ Index */
@@ -34,13 +34,14 @@ padding-right: 10px;
 
 .current{color: var(--button-text-colour);}
 
-.hero-button, .filter-button{cursor: pointer;}
+.hero-button, .filter-button{cursor: pointer; border: none;}
 
 .navigat, .auth{padding: 0; margin: 0;}
+.auth{margin-left: auto;}
 
 /* Временное? центрирование через text-align */
 
-.hero, .features{text-align: center;}
+.hero{text-align: center;}
 
 /* Шрифти Body */
 
@@ -125,7 +126,7 @@ text-decoration: none;
     
     margin-top: 0; 
     margin-bottom: 0;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 
 
     
@@ -147,7 +148,7 @@ letter-spacing: 0.06em;
     font-size: 14px;
     line-height: 1.14;
     margin-top: 0; 
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
     margin-bottom: 0; 
     padding: 0;
 } 
@@ -170,7 +171,7 @@ line-height: 1.16;
 text-align: center;
 
 }
-.team-title{padding-bottom: 50px; margin: 0; outline: 2px solid blue;}
+.team-title{padding-bottom: 50px; margin: 0; }
 
 .team >ul{ margin: 0;padding: 0;}
 
@@ -202,7 +203,7 @@ text-align: center;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none; 
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
 }
 
 
@@ -255,7 +256,7 @@ text-decoration: none;
 
     .features{padding-top: 94px; padding-bottom: 94px;}
 
-    .about-title{margin-bottom: 50px; outline: 2px solid blue; margin-top: 0; }
+    .about-title{margin-bottom: 50px; margin-top: 0; }
 
     .about{padding-bottom: 94px;}
     .team{padding-bottom: 94px; padding-top: 94px;}
@@ -283,7 +284,7 @@ text-decoration: none;
 
 .foot-link{margin-bottom: 20px; display: inline-block;}
 
-.foot-list{outline: 2px solid blue; margin: 0; padding: 0; display: inline-block; padding-left: 0;}
+.foot-list{ margin: 0; padding: 0; display: inline-block; padding-left: 0;}
 .li-foot-adress, .li-foot-email{margin-bottom: 9px;}
 
 
@@ -303,20 +304,28 @@ text-decoration: none;
 
 .samples-title, .samples-text{margin: 0;}
 
-.about-blocks{padding-top: 20px; padding-bottom: 20px; padding-left: 24px;}
+.about-blocks{padding-top: 20px; padding-bottom: 20px; padding-left: 24px; width: 370px;}
 
 ul{margin:0; padding:0}
 
 .block-sample{margin-right: 30px; margin-bottom: 30px; display: inline-block;}
 
-.block-sample:nth-child(3),.block-sample:nth-child(6),.block-sample:nth-child(9){margin-right: 0;}
+
+
+.block-sample:nth-child(3n){margin-right: 0;}
+
+/* .block-sample:nth-child(3),.block-sample:nth-child(6),.block-sample:nth-child(9){margin-right: 0;}  тоже самое работает*/
+
 .block-sample:nth-child(n + 7) {margin-bottom: 0;}
 
+/* .block-sample:nth-child(-n + 3) {margin-bottom: 0;} */
 
-.team-list{display: inline-block; margin-right: 30px;}
+
+
+.team-list{ margin-right: 30px; }
 
 .team-list:last-child{margin-right: 0;}
-.
+
 
 .about-img:last-child {
     margin-right: 0;
@@ -326,5 +335,30 @@ ul{margin:0; padding:0}
   
 
   .li-studio, .li-portfolio, .li-email{margin-right: 50px;}
-  .li-contact{margin-right: 344px;}
+  /* .li-contact{margin-right: 344px;} */
+
+  .main-menu{display: flex}
+
+.navigat, .auth {display: flex; align-items: center;}
+
+
+.studio, .portfolio, .navigat-contact, .auth-email, .auth-tel{display: block; padding-top: 32px; padding-bottom: 32px;}
+
+.logo-main{display: block; }
+
+.ul-features{display: flex; list-style: none; }
+
+
+
+.features-item{width: 270px;}
+
+/* .features-item{width: calc(100% - 60px) / 3;}    та же операция для работы с калькулятором. 60px маржины сумарно которые вычитаются  */ 
+
+.features-item:not(:last-child) {margin-right: 30px;}
+
+.samples{display: flex; flex-wrap: wrap;}
+
+.adflex{display: flex;}
+
+.filter-page{justify-content: center;}
 
